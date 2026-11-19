@@ -1,0 +1,11 @@
+{
+  "id": "bilibili-bangumi-danmaku",
+  "name": "B 站番剧弹幕",
+  "version": "1.0.0",
+  "description": "让梨花把 B 站番剧链接或编号解析成各集，并取得某一集的公开弹幕 XML，再导入 NipaPlay。",
+  "author": "AimesSoft",
+  "category": "danmaku",
+  "notices": [
+    "梨花会联网访问 B 站的公开接口，不登录、不使用 Cookie。公开接口只给每集最近的一部分弹幕；部分番剧在你所在的地区可能看不到。"
+  ]
+}

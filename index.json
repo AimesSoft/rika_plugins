@@ -93,6 +93,37 @@
           "bytes": 15531
         }
       ]
+    },
+    {
+      "id": "bilibili-bangumi-danmaku",
+      "kind": "skill",
+      "name": "B 站番剧弹幕",
+      "version": "1.0.0",
+      "description": "让梨花把 B 站番剧链接或编号解析成各集，并取得某一集的公开弹幕 XML，再导入 NipaPlay。",
+      "author": "AimesSoft",
+      "category": "danmaku",
+      "notices": [
+        "梨花会联网访问 B 站的公开接口，不登录、不使用 Cookie。公开接口只给每集最近的一部分弹幕；部分番剧在你所在的地区可能看不到。"
+      ],
+      "readme": {
+        "url": "skills/bilibili-bangumi-danmaku/README.md",
+        "sha256": "0a6147fa481ada2f1294bb3ee954f9b717ea396eff099072133a654e3960988c",
+        "bytes": 1681
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "skills/bilibili-bangumi-danmaku/SKILL.md",
+          "sha256": "889f01b80e11937dd9d089b1f4f1b09417283334de58d974202743e3734ca7ee",
+          "bytes": 3655
+        },
+        {
+          "path": "bilibili_bangumi.py",
+          "url": "skills/bilibili-bangumi-danmaku/bilibili_bangumi.py",
+          "sha256": "9205ed3d3750eaec691d7d15de51e29ede3eeb33fc3bea75082831f5391c7544",
+          "bytes": 17810
+        }
+      ]
     }
   ]
 }
