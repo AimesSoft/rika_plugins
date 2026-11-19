@@ -1,0 +1,11 @@
+{
+  "id": "bangumi-moe",
+  "name": "萌番组",
+  "version": "1.0.0",
+  "description": "让梨花在萌番组（bangumi.moe）按番剧、字幕组等标签或标题找资源，给出磁力、发布组、大小和标签。",
+  "author": "AimesSoft",
+  "category": "bt",
+  "notices": [
+    "梨花会联网访问 bangumi.moe。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+  ]
+}

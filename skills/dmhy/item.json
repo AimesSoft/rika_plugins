@@ -1,0 +1,11 @@
+{
+  "id": "dmhy",
+  "name": "動漫花園",
+  "version": "1.0.0",
+  "description": "让梨花在動漫花園（share.dmhy.org）的公开 RSS 里找番剧资源，给出磁力链接、发布者、分类和发布时间。",
+  "author": "AimesSoft",
+  "category": "bt",
+  "notices": [
+    "梨花会联网访问 share.dmhy.org。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+  ]
+}

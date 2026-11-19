@@ -1,0 +1,11 @@
+{
+  "id": "acgrip",
+  "name": "ACG.RIP",
+  "version": "1.0.0",
+  "description": "让梨花在 ACG.RIP（acg.rip）的公开 RSS 里找番剧资源，给出种子链接、大小和发布时间，可按分类、发布组筛选。",
+  "author": "AimesSoft",
+  "category": "bt",
+  "notices": [
+    "梨花会联网访问 acg.rip。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+  ]
+}

@@ -1,4 +1,98 @@
 {
   "version": 1,
-  "items": []
+  "items": [
+    {
+      "id": "acgrip",
+      "kind": "skill",
+      "name": "ACG.RIP",
+      "version": "1.0.0",
+      "description": "让梨花在 ACG.RIP（acg.rip）的公开 RSS 里找番剧资源，给出种子链接、大小和发布时间，可按分类、发布组筛选。",
+      "author": "AimesSoft",
+      "category": "bt",
+      "notices": [
+        "梨花会联网访问 acg.rip。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+      ],
+      "readme": {
+        "url": "skills/acgrip/README.md",
+        "sha256": "ea38992104bdb99eaa310fc84fa47f53b3947fc50770a5cb68ff8f1b9655649f",
+        "bytes": 1590
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "skills/acgrip/SKILL.md",
+          "sha256": "55e899d4137ac3ff5f573d60f944c68924775a4b261a587cd835b6d276f48d93",
+          "bytes": 2851
+        },
+        {
+          "path": "acgrip.py",
+          "url": "skills/acgrip/acgrip.py",
+          "sha256": "1c4c81697d99b21f41a713135fba6cc3d72037e1f8fd97cb69cd4459b37c96de",
+          "bytes": 12193
+        }
+      ]
+    },
+    {
+      "id": "bangumi-moe",
+      "kind": "skill",
+      "name": "萌番组",
+      "version": "1.0.0",
+      "description": "让梨花在萌番组（bangumi.moe）按番剧、字幕组等标签或标题找资源，给出磁力、发布组、大小和标签。",
+      "author": "AimesSoft",
+      "category": "bt",
+      "notices": [
+        "梨花会联网访问 bangumi.moe。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+      ],
+      "readme": {
+        "url": "skills/bangumi-moe/README.md",
+        "sha256": "e5997dfd7ea348637eb12193b69a7c3c7acefff0ffcac3bfd0b9c56e6efa8968",
+        "bytes": 1937
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "skills/bangumi-moe/SKILL.md",
+          "sha256": "23e05c6694e7299651c19f925688b8c88fb9a9be6019a430e19f553bad01a0fb",
+          "bytes": 3297
+        },
+        {
+          "path": "bangumi_moe.py",
+          "url": "skills/bangumi-moe/bangumi_moe.py",
+          "sha256": "f46076924618eebbd626efe40e91de80ca0fa85ebb766294ff25a7ef4f555d13",
+          "bytes": 13906
+        }
+      ]
+    },
+    {
+      "id": "dmhy",
+      "kind": "skill",
+      "name": "動漫花園",
+      "version": "1.0.0",
+      "description": "让梨花在動漫花園（share.dmhy.org）的公开 RSS 里找番剧资源，给出磁力链接、发布者、分类和发布时间。",
+      "author": "AimesSoft",
+      "category": "bt",
+      "notices": [
+        "梨花会联网访问 share.dmhy.org。资源由第三方发布，技能只列出候选；下不下载由你决定，请遵守当地法律与版权。"
+      ],
+      "readme": {
+        "url": "skills/dmhy/README.md",
+        "sha256": "f7b6a662a62eac17df5e17bb0c2b64f7d2386fffdd1fa8ea713d4ee2b426de02",
+        "bytes": 1681
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "skills/dmhy/SKILL.md",
+          "sha256": "933f56de79ed7ffbf83fc2f203f51f13d32fa9a70e23e234cd5c6d795cb03eca",
+          "bytes": 3236
+        },
+        {
+          "path": "dmhy.py",
+          "url": "skills/dmhy/dmhy.py",
+          "sha256": "37f0a37d90fa6f59c45bba317fa5f5d96f753e10d82d7643e7d65df4875b1a9f",
+          "bytes": 15531
+        }
+      ]
+    }
+  ]
 }
