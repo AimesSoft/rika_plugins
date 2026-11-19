@@ -1,0 +1,10 @@
+# Python bytecode; tools/build_index.py rejects __pycache__ inside an item folder.
+__pycache__/
+*.py[cod]
+
+# macOS Finder; hidden files inside an item folder also fail the build.
+.DS_Store
+
+# Local scratch output (danmaku XML, saved feeds) from trying skills.
+/out/
+/tmp/

@@ -1,0 +1,43 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      # Keep bytecode out of item folders; the build rejects __pycache__ there.
+      PYTHONPYCACHEPREFIX: /tmp/rika-pycache
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: index.json is valid and up to date
+        run: python3 tools/build_index.py --check
+
+      - name: Build tool tests
+        run: python3 -m unittest discover -s tools -v
+
+      - name: Compile skill scripts
+        run: |
+          shopt -s globstar nullglob
+          scripts=(skills/**/*.py)
+          if [ ${#scripts[@]} -gt 0 ]; then python3 -m py_compile "${scripts[@]}"; fi
+
+      - name: Each skill script answers --help from another directory
+        run: |
+          shopt -s globstar nullglob
+          cd "$RUNNER_TEMP"
+          for script in "$GITHUB_WORKSPACE"/skills/**/*.py; do
+            echo "::group::${script#"$GITHUB_WORKSPACE"/}"
+            python3 "$script" --help
+            echo "::endgroup::"
+          done
