@@ -27,17 +27,14 @@ jobs:
         run: python3 -m unittest discover -s tools -v
 
       - name: Compile skill scripts
-        run: |
-          shopt -s globstar nullglob
-          scripts=(skills/**/*.py)
-          if [ ${#scripts[@]} -gt 0 ]; then python3 -m py_compile "${scripts[@]}"; fi
+        run: find skills -name '*.py' -print0 | xargs -0 -r python3 -m py_compile
 
       - name: Each skill script answers --help from another directory
         run: |
-          shopt -s globstar nullglob
           cd "$RUNNER_TEMP"
-          for script in "$GITHUB_WORKSPACE"/skills/**/*.py; do
-            echo "::group::${script#"$GITHUB_WORKSPACE"/}"
-            python3 "$script" --help
-            echo "::endgroup::"
-          done
+          find "$GITHUB_WORKSPACE/skills" -name '*.py' -print0 | sort -z |
+            while IFS= read -r -d '' script; do
+              echo "::group::${script#"$GITHUB_WORKSPACE"/}"
+              python3 "$script" --help
+              echo "::endgroup::"
+            done
